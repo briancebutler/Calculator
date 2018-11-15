@@ -44,9 +44,10 @@
             this.button14 = new System.Windows.Forms.Button();
             this.button15 = new System.Windows.Forms.Button();
             this.btnEquals = new System.Windows.Forms.Button();
-            this.button17 = new System.Windows.Forms.Button();
+            this.btnC = new System.Windows.Forms.Button();
             this.button18 = new System.Windows.Forms.Button();
             this.txtResults = new System.Windows.Forms.TextBox();
+            this.equasion = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btn7
@@ -225,15 +226,16 @@
             this.btnEquals.UseVisualStyleBackColor = true;
             this.btnEquals.Click += new System.EventHandler(this.btnEquals_Click);
             // 
-            // button17
+            // btnC
             // 
-            this.button17.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.Location = new System.Drawing.Point(208, 97);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(45, 45);
-            this.button17.TabIndex = 16;
-            this.button17.Text = "C";
-            this.button17.UseVisualStyleBackColor = true;
+            this.btnC.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnC.Location = new System.Drawing.Point(208, 97);
+            this.btnC.Name = "btnC";
+            this.btnC.Size = new System.Drawing.Size(45, 45);
+            this.btnC.TabIndex = 16;
+            this.btnC.Text = "C";
+            this.btnC.UseVisualStyleBackColor = true;
+            this.btnC.Click += new System.EventHandler(this.btnC_Click);
             // 
             // button18
             // 
@@ -256,14 +258,26 @@
             this.txtResults.Text = "0";
             this.txtResults.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
+            // equasion
+            // 
+            this.equasion.AutoSize = true;
+            this.equasion.BackColor = System.Drawing.SystemColors.Window;
+            this.equasion.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.equasion.ForeColor = System.Drawing.SystemColors.ButtonShadow;
+            this.equasion.Location = new System.Drawing.Point(4, 5);
+            this.equasion.Name = "equasion";
+            this.equasion.Size = new System.Drawing.Size(0, 22);
+            this.equasion.TabIndex = 19;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(262, 250);
+            this.Controls.Add(this.equasion);
             this.Controls.Add(this.txtResults);
             this.Controls.Add(this.button18);
-            this.Controls.Add(this.button17);
+            this.Controls.Add(this.btnC);
             this.Controls.Add(this.btnEquals);
             this.Controls.Add(this.button15);
             this.Controls.Add(this.button14);
@@ -307,9 +321,10 @@
         private System.Windows.Forms.Button button14;
         private System.Windows.Forms.Button button15;
         private System.Windows.Forms.Button btnEquals;
-        private System.Windows.Forms.Button button17;
+        private System.Windows.Forms.Button btnC;
         private System.Windows.Forms.Button button18;
         private System.Windows.Forms.TextBox txtResults;
+        private System.Windows.Forms.Label equasion;
     }
 }
 

@@ -25,7 +25,7 @@ namespace Calculator
         {
             if ((txtResults.Text == "0")||(operation_pressed))
                 txtResults.Clear();
-            
+            operation_pressed = false;
             Button b = (Button)sender;
             txtResults.Text = txtResults.Text + b.Text;
         }
@@ -41,12 +41,14 @@ namespace Calculator
             operation = b.Text;
             value = Double.Parse(txtResults.Text);
             operation_pressed = true;
+            equasion.Text = value + " " + operation;
         }
 
         private void btnEquals_Click(object sender, EventArgs e)
         {
-
-            switch(operation)
+            equasion.Text = "";
+            
+            switch (operation)
             {
                 case "+":
                     txtResults.Text = (value + Double.Parse(txtResults.Text)).ToString();
@@ -61,6 +63,13 @@ namespace Calculator
                     txtResults.Text = (value / Double.Parse(txtResults.Text)).ToString();
                     break;
             }
+            
+        }
+
+        private void btnC_Click(object sender, EventArgs e)
+        {
+            txtResults.Text = "0";
+            value = 0;
         }
     }
 }
