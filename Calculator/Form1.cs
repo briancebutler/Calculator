@@ -52,13 +52,13 @@ namespace Calculator
                     txtResults.Text = (value + Double.Parse(txtResults.Text)).ToString();
                     break;
                 case "-":
-                    txtResults.Text = (value + Double.Parse(txtResults.Text)).ToString();
+                    txtResults.Text = (value - Double.Parse(txtResults.Text)).ToString();
                     break;
                 case "*":
-                    txtResults.Text = (value + Double.Parse(txtResults.Text)).ToString();
+                    txtResults.Text = (value * Double.Parse(txtResults.Text)).ToString();
                     break;
                 case "/":
-                    txtResults.Text = (value + Double.Parse(txtResults.Text)).ToString();
+                    txtResults.Text = (value / Double.Parse(txtResults.Text)).ToString();
                     break;
             }
         }
